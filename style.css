@@ -4,17 +4,24 @@
     box-sizing: border-box;
 } 
  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
- 
-  
-  @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Nunito+Sans:opsz,wght@6..12,200&family=Raleway:ital@1&family=Roboto:ital,wght@1,700&display=swap');
- 
- 
-#header{
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Nunito+Sans:opsz,wght@6..12,200&family=Raleway:ital@1&family=Roboto:ital,wght@1,700&display=swap');
+
+
+  #header{
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
+@media(max-width:768px){
+   #header{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+   }
 
+}
 
 #div-parent{
     display: flex;
@@ -31,7 +38,7 @@
 }
 #name{
     font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 11px;
     color: black;
     text-decoration: none;
 }
@@ -39,7 +46,8 @@
 @media(max-width:768px){
     #name{
       font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-size: 13px;
+      font-size: 10px;
+      text-decoration: none;
     }
 }
 #nav{
@@ -172,8 +180,8 @@
    #button-2:hover{
      background-color: white;
      cursor: pointer;
-     transition: all;
-     transition-duration: 500ms;
+     transition:;
+     transition-duration: 200ms;
   }
    }
   
@@ -253,13 +261,20 @@
    height: 50px;
 
 }
- #resume-main{
-   
+#resume-main{
+
    flex-direction: column;
    display: flex;
    justify-content: center;
    align-items: center;
-   }
+}
+   @media(max-width:768px){
+      #resume-main{
+         display: flex;
+         gap: 30px;
+      }
+
+   } 
   #resume-title{
    display: flex;
    justify-content: center;
@@ -273,16 +288,24 @@
   #education{
    width: 100%;
    display: flex;
-   align-items: center;
+   align-items: start;
    justify-content: space-between;
    padding: 15px 100px 15px 100px;
+  }
+  @media(max-width:768px){
+   #education{
+   width:100%;
+   max-width: fit-content;
+   align-items: start;
+   padding: 10px 40px 10px 40px;
+   }
   }
   #para-div{
    display: flex;
    flex-direction: column;
-
-  }
-  #year{
+ 
+}
+#year{
    display: flex;
    gap: 50px;
    margin-top: 5px;
