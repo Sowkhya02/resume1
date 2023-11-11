@@ -286,25 +286,37 @@
   /*  font-family: 'Nunito Sans', sans-serif;
    font-family: 'Raleway', sans-serif;
    font-family: 'Roboto', sans-serif;*/
-   }
+   } 
+
   #education{
    width: 100%;
    display: flex;
    align-items: start;
    justify-content: space-between;
-   padding: 45px 40px 15px 40px;
+   margin: 60px;
+   padding: 70px;
+    
    
   }
+  
   @media(max-width:768px){
    #education{
-   padding:5px;
-   justify-content: space-between;
-    gap: 80px;
+   width: auto;
+   padding: 30px;
+   display: block;
+   justify-content: center;
+   margin: 20px;
+   gap: 20px;
+   align-items: start; 
+
+ 
     
    }
   }
   #edu-resume{
-   padding-left: 250px;
+   padding-left: 90px;
+
+
   }
   #para-div{
    display: flex;
@@ -313,7 +325,7 @@
 }
 #year{
    display: flex;
-   gap:20px;
+   gap:30px;
    margin-top: 5px;
    
     
@@ -321,7 +333,7 @@
 @media(max-width:768px){
    #year{
       display:flex;
-      gap: 15px;
+      gap: 20px;
       flex-direction: column;
       
 
