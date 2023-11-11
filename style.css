@@ -159,7 +159,7 @@
  #button-1:hover{
     background-color: white;
     cursor: pointer;
-    transition: all;
+    transition:all;
  }
  @media(max-width:768px){
     #button-1{
@@ -180,8 +180,8 @@
    #button-2:hover{
      background-color: white;
      cursor: pointer;
-     transition:;
-     transition-duration: 200ms;
+     transition:all;
+      
   }
    }
   
@@ -231,8 +231,9 @@
 }
 @media(max-width:768px){
    #footer{
-      flex-direction: column;
       padding: 10px;
+       
+      flex-direction: column;
       gap: 10px;
    }
     
@@ -272,6 +273,7 @@
       #resume-main{
          display: flex;
          gap: 30px;
+         margin: 10px;
       }
 
    } 
@@ -294,10 +296,11 @@
   }
   @media(max-width:768px){
    #education{
-   width:100%;
-   max-width: fit-content;
-   align-items: start;
-   padding: 10px 40px 10px 40px;
+   padding:5px;
+   justify-content: space-between;
+    
+   gap: 80px;
+    
    }
   }
   #para-div{
@@ -307,19 +310,32 @@
 }
 #year{
    display: flex;
-   gap: 50px;
+   gap:20px;
    margin-top: 5px;
+   
+    
+}
+@media(max-width:768px){
+   #year{
+      display:flex;
+      gap: 15px;
+      flex-direction: column;
+      
+
    }
+
+}
    #date{
       font-weight:400;
       font-family: 'Raleway', sans-serif;
       font-size: 18px;
       margin-top: 10px;
+      
   }
   #study{
    display: flex;
    flex-direction: column;
-   gap: 10px;
+   gap:10px;
  }
  #para-div{
    gap: 20px;
@@ -330,6 +346,31 @@
  #contact-about{
    display: flex;
    flex-direction: column;
-   justify-content: center;
-    
- }
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 190px;
+
+}
+@media (max-width:768px){
+   #contact-about{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+       margin:70px 30px 10px 55px;
+       font-size: 12px;
+   }
+   
+}
+#font-p{
+   font-size: 25px;
+   text-decoration: none;
+   
+}
+@media (max-width:768px){
+   #font-p{
+      font-size: 15px;
+      
+      
+   }
+
+}
